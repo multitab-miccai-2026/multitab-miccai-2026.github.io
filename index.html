@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiTab 2026 - MICCAI Workshop on Multimodal Learning with Medical Tabular Data</title>
+    
+    <!-- Bulma CSS Framework -->
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/css/index.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar has-custom-bg-nav">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#home">
+                    <img src="static/images/miccai2026-logo.png" alt="MICCAI 2026" style="height: 40px; margin-right: 10px;">
+                    <strong>MultiTab 2026</strong>
+                </a>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="#about">About</a>
+                    <a class="navbar-item" href="#cfp">Call for Papers</a>
+                    <a class="navbar-item" href="#organizers">Organizers</a>
+                    <a class="navbar-item" href="#keynote">Keynote</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero is-small has-custom-bg" id="home">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <img src="static/images/miccai2026-logo.png" alt="MICCAI 2026" style="height: 120px; margin-bottom: 1.5rem;">
+                <h1 class="title is-1">MultiTab 2026</h1>
+                <p class="subtitle is-4">MICCAI Workshop on Multimodal Learning with Medical Tabular Data</p>
+                <p class="subtitle-secondary">In conjunction with the 29th International Conference on Medical Image Computing and Computer Assisted Intervention</p>
+                <div class="mt-1">
+                    <a href="#cfp" class="button is-light is-medium">
+                        <span class="icon"><i class="fas fa-file-alt"></i></span>
+                        <span>Call for Papers</span>
+                    </a>
+                    <a href="#important-dates" class="button is-light is-medium ml-3">
+                        <span class="icon"><i class="fas fa-calendar"></i></span>
+                        <span>Important Dates</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="title is-4">About the Workshop</h2>
+            <div class="columns is-multiline">
+                <div class="column is-full">
+                    <div class="box" style="padding: 1.5rem;">
+                        <p class="content" style="margin-bottom: 1rem;">
+                            Tabular clinical data—including electronic health records (EHRs), laboratory measurements, omics data, and other clinical variables—remain underutilized in medical imaging research despite their widespread availability in biobanks and clinical repositories. Their heterogeneous structure, variable coding schemes, and substantial missingness make them difficult to model and integrate with imaging and other modalities.
+                        </p>
+                        <p class="content" style="margin-bottom: 0;">
+                            <strong>MultiTab</strong> focuses on advancing methodological approaches that address these challenges, positioning tabular and semi-structured medical data as a core component that can enhance medical imaging analysis. We aim to gather researchers developing AI methods for learning from diverse tabular data types and for combining them with image data and other complementary modalities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Organized By -->
+            <h4 class="title is-5 has-text-centered" style="margin-top: 1.5rem; margin-bottom: 1rem;">Organized By</h4>
+            <div class="columns is-centered is-vcentered">
+                <div class="column is-narrow">
+                    <img src="static/images/logos/helmholtz_munich.jpg" alt="Helmholtz Munich" style="height: 80px; margin: 0 20px;">
+                </div>
+                <div class="column is-narrow">
+                    <img src="static/images/logos/tum.png" alt="TUM" style="height: 80px; margin: 0 20px;">
+                </div>
+                <div class="column is-narrow">
+                    <img src="static/images/logos/imperial_college_london.png" alt="Imperial College London" style="height: 80px; margin: 0 20px;">
+                </div>
+                <div class="column is-narrow">
+                    <img src="static/images/logos/telecom_paris.jpg" alt="Télécom Paris" style="height: 80px; margin: 0 20px;">
+                </div>
+                <div class="column is-narrow">
+                    <img src="static/images/logos/IP_PARIS.png" alt="IP Paris" style="height: 80px; margin: 0 20px;">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Call for Papers Section -->
+    <section class="section has-background-light" id="cfp">
+        <div class="container">
+            <h2 class="title is-3">Call for Papers</h2>
+            <p class="subtitle is-5 mb-4">
+                We welcome contributions across the following topics:
+            </p>
+
+            <div class="columns is-multiline">
+                <!-- Topic 1 -->
+                <div class="column is-full-tablet is-half-desktop">
+                    <div class="box">
+                        <h3 class="title is-5">
+                            <i class="fas fa-compress-alt has-text-primary"></i>
+                            Fusion of Imaging, Tabular, and Multimodal Data
+                        </h3>
+                        <p>
+                            Novel architectures and techniques for integrating imaging with tabular data (e.g., clinical, omics, EHRs) and other modalities (e.g., text, time-series, signals).
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Topic 2 -->
+                <div class="column is-full-tablet is-half-desktop">
+                    <div class="box">
+                        <h3 class="title is-5">
+                            <i class="fas fa-shield-alt has-text-primary"></i>
+                            Multimodal Inference Challenges
+                        </h3>
+                        <p>
+                            Generalization, robustness, and trustworthiness in models combining tabular and imaging data with focus on scalability, interpretability, and uncertainty quantification.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Topic 3 -->
+                <div class="column is-full-tablet is-half-desktop">
+                    <div class="box">
+                        <h3 class="title is-5">
+                            <i class="fas fa-graduation-cap has-text-primary"></i>
+                            Foundation Models for Multimodal Learning
+                        </h3>
+                        <p>
+                            Adaptation, fine-tuning, and evaluation of foundation models to enhance fusion and representation learning across tabular and imaging data.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Topic 4 -->
+                <div class="column is-full-tablet is-half-desktop">
+                    <div class="box">
+                        <h3 class="title is-5">
+                            <i class="fas fa-brain has-text-primary"></i>
+                            Trustworthy and Explainable AI
+                        </h3>
+                        <p>
+                            Cross-modal interpretability, fairness, bias mitigation, and compliance in models leveraging both imaging and structured tabular data.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Topic 5 -->
+                <div class="column is-full-tablet is-half-desktop">
+                    <div class="box">
+                        <h3 class="title is-5">
+                            <i class="fas fa-bar-chart has-text-primary"></i>
+                            Benchmarking and Reproducibility
+                        </h3>
+                        <p>
+                            Standards, datasets, and evaluation metrics specifically designed for multimodal research involving imaging and tabular data.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Topic 6 -->
+                <div class="column is-full-tablet is-half-desktop">
+                    <div class="box">
+                        <h3 class="title is-5">
+                            <i class="fas fa-random has-text-primary"></i>
+                            Handling Data Heterogeneity
+                        </h3>
+                        <p>
+                            Techniques for missing data, noise, multi-source integration, domain shifts, and longitudinal multimodal analysis with temporal alignment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review & Publication Info -->
+            <div class="box" style="margin-top: 2rem; background-color: #f0faf8;">
+                <div class="columns is-multiline">
+                    <div class="column is-half">
+                        <p>
+                            <strong><i class="fas fa-shield-alt has-text-primary"></i> Double-Blind Review</strong><br>
+                            <span class="is-size-7">All submissions undergo rigorous double-blind peer review with minimum 3 reviewers per paper, ensuring transparent and fair evaluation by experts in the field.</span>
+                        </p>
+                    </div>
+                    <div class="column is-half">
+                        <p>
+                            <strong><i class="fas fa-book has-text-primary"></i> Publication</strong><br>
+                            <span class="is-size-7">Accepted papers will be published in the MICCAI Satellite Events LNCS Proceedings by Springer Nature, providing high visibility and impact for your research.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Important Dates Section -->
+    <section class="section has-background-light" id="important-dates">
+        <div class="container">
+            <h2 class="title is-3 mb-5">Important Dates</h2>
+            
+            <div class="columns">
+                <!-- Left Column: Submission Deadlines -->
+                <div class="column is-half">
+                    <h3 class="title is-4 mb-3">Submission</h3>
+                    <div class="box">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-marker is-primary"></div>
+                                <div class="timeline-content">
+                                    <p class="heading">May 15, 2026</p>
+                                    <p><strong>Paper Submission Deadline</strong></p>
+                                    <p class="is-size-7 has-text-grey">Submit your full paper through OpenReview</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-marker is-info"></div>
+                                <div class="timeline-content">
+                                    <p class="heading">May 20, 2026</p>
+                                    <p><strong>Abstract Submission Deadline</strong></p>
+                                    <p class="is-size-7 has-text-grey">Submit your abstract for poster presentation</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-marker is-success"></div>
+                                <div class="timeline-content">
+                                    <p class="heading">June 15, 2026</p>
+                                    <p><strong>Acceptance Notifications</strong></p>
+                                    <p class="is-size-7 has-text-grey">Authors notified of acceptance/rejection decisions</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-marker is-warning"></div>
+                                <div class="timeline-content">
+                                    <p class="heading">October 6, 2026</p>
+                                    <p><strong>Workshop Date</strong></p>
+                                    <p class="is-size-7 has-text-grey">2-hour workshop at MICCAI 2026</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Program -->
+                <div class="column is-half">
+                    <h3 class="title is-4 mb-3">Program</h3>
+                    <div class="box">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-marker is-primary"></div>
+                                <div class="timeline-content">
+                                    <p class="heading">OCTOBER 6, 2026 · 08:00 - 08:10</p>
+                                    <p><strong>Welcome and Opening Remarks</strong></p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-marker is-info"></div>
+                                <div class="timeline-content">
+                                    <p class="heading">OCTOBER 6, 2026 · 08:10 - 08:50</p>
+                                    <p><strong>Keynote Presentation</strong></p>
+                                    <p class="is-size-7 has-text-grey">
+                                        Speakers: Marine le Morvan (Tabular Foundation Models), Mateja Jammik (Multimodal Models), Arkadiusz Sitek (Translational Healthcare)
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-marker is-success"></div>
+                                <div class="timeline-content">
+                                    <p class="heading">OCTOBER 6, 2026 · 08:50 - 09:30</p>
+                                    <p><strong>Scientific Talks</strong></p>
+                                    <p class="is-size-7 has-text-grey">Selected papers and research presentations</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-marker is-warning"></div>
+                                <div class="timeline-content">
+                                    <p class="heading">OCTOBER 6, 2026 · 09:30 - 10:00</p>
+                                    <p><strong>Poster Session & Closing Remarks</strong></p>
+                                    <p class="is-size-7 has-text-grey">Awards and networking</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Submission Section -->
+    <section class="section has-background-light">
+        <div class="container">
+            <h2 class="title is-3 has-text-centered">Submission Information</h2>
+            
+
+
+            <div class="box has-background-warning-light">
+                <p class="heading"><i class="fas fa-info-circle"></i> Submission Portal</p>
+                <p class="title is-5">Coming Soon</p>
+                <p>
+                    Submissions will be managed through OpenReview. Details will be announced on this page.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organizers Section -->
+    <section class="section" id="organizers">
+        <div class="container">
+            <h2 class="title is-3 has-text-centered">Workshop Organizers</h2>
+
+            <div class="columns is-multiline">
+                <!-- Organizer 1 -->
+                <div class="column is-half-tablet is-one-quarter-desktop">
+                    <div class="box">
+                        <figure class="image is-96x96 mb-3">
+                            <img src="static/images/photos/maxime_di_folco.jpg" alt="Maxime Di Folco" style="object-fit: cover;">
+                        </figure>
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="heading is-size-6">Maxime Di Folco</p>
+                                <p class="is-size-7">Associate Professor</p>
+                                <p class="is-size-7 has-text-grey">Télécom Paris</p>
+                            </div>
+                        </div>
+                        <p class="is-size-7 mt-2">
+                            <a href="https://maxime.difolco.github.io" target="_blank">
+                                <i class="fas fa-globe"></i> Website
+                            </a>
+                            |
+                            <a href="mailto:maxime.difolco@telecom-paris.fr">
+                                <i class="fas fa-envelope"></i> Email
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Organizer 2 -->
+                <div class="column is-half-tablet is-one-quarter-desktop">
+                    <div class="box">
+                        <figure class="image is-96x96 mb-3">
+                            <img src="static/images/photos/chen_qin.png" alt="Chen Qin" style="object-fit: cover;">
+                        </figure>
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="heading is-size-6">Chen Qin</p>
+                                <p class="is-size-7">Associate Professor</p>
+                                <p class="is-size-7 has-text-grey">Imperial College London</p>
+                            </div>
+                        </div>
+                        <p class="is-size-7 mt-2">
+                            <a href="https://cq615.github.io/" target="_blank">
+                                <i class="fas fa-globe"></i> Website
+                            </a>
+                            |
+                            <a href="mailto:c.qin15@imperial.ac.uk">
+                                <i class="fas fa-envelope"></i> Email
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Organizer 3 -->
+                <div class="column is-half-tablet is-one-quarter-desktop">
+                    <div class="box">
+                        <figure class="image is-96x96 mb-3">
+                            <img src="static/images/photos/laura_daza.jpg" alt="Laura Daza" style="object-fit: cover;">
+                        </figure>
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="heading is-size-6">Laura Daza</p>
+                                <p class="is-size-7">Post-doctoral Researcher</p>
+                                <p class="is-size-7 has-text-grey">Helmholtz Munich & TUM</p>
+                            </div>
+                        </div>
+                        <p class="is-size-7 mt-2">
+                            <a href="https://compai-lab.github.io/author/laura-daza/" target="_blank">
+                                <i class="fas fa-globe"></i> Website
+                            </a>
+                            |
+                            <a href="mailto:laura.daza@helmholtz-munich.de">
+                                <i class="fas fa-envelope"></i> Email
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Organizer 4 -->
+                <div class="column is-half-tablet is-one-quarter-desktop">
+                    <div class="box">
+                        <figure class="image is-96x96 mb-3">
+                            <img src="static/images/photos/nikola_simidjievski.jpg" alt="Nikola Simidjievski" style="object-fit: cover;">
+                        </figure>
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="heading is-size-6">Nikola Simidjievski</p>
+                                <p class="is-size-7">Associate Professor</p>
+                                <p class="is-size-7 has-text-grey">Télécom Paris</p>
+                            </div>
+                        </div>
+                        <p class="is-size-7 mt-2">
+                            <a href="https://simidjievskin.github.io/" target="_blank">
+                                <i class="fas fa-globe"></i> Website
+                            </a>
+                            |
+                            <a href="mailto:nikola.simidjievski@telecom-paris.fr">
+                                <i class="fas fa-envelope"></i> Email
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Organizer 5 -->
+                <div class="column is-half-tablet is-one-quarter-desktop">
+                    <div class="box">
+                        <figure class="image is-96x96 mb-3">
+                            <img src="static/images/photos/julia_schnabel.jpg" alt="Julia Schnabel" style="object-fit: cover;">
+                        </figure>
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="heading is-size-6">Julia Schnabel</p>
+                                <p class="is-size-7">Professor</p>
+                                <p class="is-size-7 has-text-grey">Helmholtz Munich & TUM</p>
+                            </div>
+                        </div>
+                        <p class="is-size-7 mt-2">
+                            <a href="https://compai-lab.github.io/author/julia-a.-schnabel/" target="_blank">
+                                <i class="fas fa-globe"></i> Website
+                            </a>
+                            |
+                            <a href="mailto:julia.schnabel@tum.de">
+                                <i class="fas fa-envelope"></i> Email
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Organizer 6 -->
+                <div class="column is-half-tablet is-one-quarter-desktop">
+                    <div class="box">
+                        <figure class="image is-96x96 mb-3">
+                            <img src="static/images/photos/marta_hasny.jpeg" alt="Marta Hasny" style="object-fit: cover;">
+                        </figure>
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="heading is-size-6">Marta Hasny</p>
+                                <p class="is-size-7">PhD Researcher</p>
+                                <p class="is-size-7 has-text-grey">Helmholtz Munich & TUM</p>
+                            </div>
+                        </div>
+                        <p class="is-size-7 mt-2">
+                            <a href="https://compai-lab.github.io/author/marta-hasny/" target="_blank">
+                                <i class="fas fa-globe"></i> Website
+                            </a>
+                            |
+                            <a href="mailto:marta.hasny@helmholtz-munich.de">
+                                <i class="fas fa-envelope"></i> Email
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Organizer 7 -->
+                <div class="column is-half-tablet is-one-quarter-desktop">
+                    <div class="box">
+                        <figure class="image is-96x96 mb-3">
+                            <img src="static/images/photos/jun_li.jpg" alt="Jun Li" style="object-fit: cover;">
+                        </figure>
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="heading is-size-6">Jun Li</p>
+                                <p class="is-size-7">PhD Researcher</p>
+                                <p class="is-size-7 has-text-grey">Technical University of Munich</p>
+                            </div>
+                        </div>
+                        <p class="is-size-7 mt-2">
+                            <a href="https://compai-lab.github.io/author/jun-li/" target="_blank">
+                                <i class="fas fa-globe"></i> Website
+                            </a>
+                            |
+                            <a href="mailto:june.li@tum.de">
+                                <i class="fas fa-envelope"></i> Email
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Organizer 8 -->
+                <div class="column is-half-tablet is-one-quarter-desktop">
+                    <div class="box">
+                        <figure class="image is-96x96 mb-3">
+                            <img src="static/images/photos/siyi_du.png" alt="Siyi Du" style="object-fit: cover;">
+                        </figure>
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="heading is-size-6">Siyi Du</p>
+                                <p class="is-size-7">PhD Researcher</p>
+                                <p class="is-size-7 has-text-grey">Imperial College London</p>
+                            </div>
+                        </div>
+                        <p class="is-size-7 mt-2">
+                            <a href="https://siyi-wind.github.io/" target="_blank">
+                                <i class="fas fa-globe"></i> Website
+                            </a>
+                            |
+                            <a href="mailto:s.du23@imperial.ac.uk">
+                                <i class="fas fa-envelope"></i> Email
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keynote Speakers Section -->
+    <section class="section has-background-light" id="keynote">
+        <div class="container">
+            <h2 class="title is-3 has-text-centered">Keynote Speakers</h2>
+
+            <div class="columns is-multiline">
+                <!-- Keynote Speaker 1 -->
+                <div class="column is-full-tablet is-one-third-desktop">
+                    <div class="box">
+                        <figure class="image is-128x128 mb-3">
+                            <img src="static/images/photos/Marine-le-Morvan.jpg" alt="Marine le Morvan" style="object-fit: cover; border-radius: 8px;">
+                        </figure>
+                        <h3 class="title is-5">Marine le Morvan</h3>
+                        <p class="is-size-7 has-text-grey mb-2"><strong>Research Scientist (Chargée de Recherche)</strong></p>
+                        <p class="is-size-7 has-text-grey mb-3">INRIA (SODA team, Paris-Saclay)</p>
+                        <p class="is-size-7 mt-2">
+                            <a href="https://marinelm.github.io/" target="_blank" class="has-text-primary">
+                                <i class="fas fa-globe"></i> Website
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Keynote Speaker 2 -->
+                <div class="column is-full-tablet is-one-third-desktop">
+                    <div class="box">
+                        <figure class="image is-128x128 mb-3">
+                            <img src="static/images/photos/jamnik_mateja.png" alt="Mateja Jamnik" style="object-fit: cover; border-radius: 8px;">
+                        </figure>
+                        <h3 class="title is-5">Mateja Jamnik</h3>
+                        <p class="is-size-7 has-text-grey mb-2"><strong>Professor of Artificial Intelligence</strong></p>
+                        <p class="is-size-7 has-text-grey mb-3">University of Cambridge</p>
+                        <p class="is-size-7 mt-2">
+                            <a href="https://www.cl.cam.ac.uk/~mj201/" target="_blank" class="has-text-primary">
+                                <i class="fas fa-globe"></i> Website
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Keynote Speaker 3 -->
+                <div class="column is-full-tablet is-one-third-desktop">
+                    <div class="box">
+                        <figure class="image is-128x128 mb-3">
+                            <img src="static/images/photos/Arkadiusz-Sitek.webp" alt="Arkadiusz Sitek" style="object-fit: cover; border-radius: 8px;">
+                        </figure>
+                        <h3 class="title is-5">Arkadiusz Sitek</h3>
+                        <p class="is-size-7 has-text-grey mb-2"><strong>Research Scientist and Physicist</strong></p>
+                        <p class="is-size-7 has-text-grey mb-3">Massachusetts General Hospital | Harvard Medical School</p>
+                        <p class="is-size-7 mt-2">
+                            <a href="https://www.areksitek.com/" target="_blank" class="has-text-primary">
+                                <i class="fas fa-globe"></i> Website
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer has-background-dark has-text-white">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-one-quarter">
+                    <h4 class="title is-6 has-text-white">MultiTab 2026</h4>
+                    <p class="is-size-7">
+                        MICCAI Workshop on Multimodal Learning with Medical Tabular Data
+                    </p>
+                </div>
+                <div class="column is-one-quarter">
+                    <h4 class="title is-6 has-text-white">Quick Links</h4>
+                    <ul class="is-size-7">
+                        <li><a href="#about" class="has-text-grey-light">About</a></li>
+                        <li><a href="#cfp" class="has-text-grey-light">Call for Papers</a></li>
+                        <li><a href="#program" class="has-text-grey-light">Program</a></li>
+                        <li><a href="#contact" class="has-text-grey-light">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="column is-one-quarter">
+                    <h4 class="title is-6 has-text-white">Topics</h4>
+                    <ul class="is-size-7">
+                        <li><a href="#cfp" class="has-text-grey-light">Multimodal Fusion</a></li>
+                        <li><a href="#cfp" class="has-text-grey-light">Foundation Models</a></li>
+                        <li><a href="#cfp" class="has-text-grey-light">Trustworthy AI</a></li>
+                        <li><a href="#cfp" class="has-text-grey-light">Data Heterogeneity</a></li>
+                    </ul>
+                </div>
+                <div class="column is-one-quarter">
+                    <h4 class="title is-6 has-text-white">MICCAI</h4>
+                    <p class="is-size-7 has-text-grey-light">
+                        This is a satellite workshop for MICCAI 2026, the International Conference on Medical Image Computing and Computer-Assisted Intervention.
+                    </p>
+                </div>
+            </div>
+            <hr class="has-background-grey-darker">
+            <div class="has-text-centered">
+                <p class="is-size-7 has-text-grey-light">
+                    &copy; 2026 MultiTab Workshop. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/index.js"></script>
+    
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Mobile navbar toggle
+        const navbarBurger = document.querySelector('.navbar-burger');
+        if (navbarBurger) {
+            navbarBurger.addEventListener('click', () => {
+                navbarBurger.classList.toggle('is-active');
+                document.querySelector('.navbar-menu').classList.toggle('is-active');
+            });
+        }
+    </script>
+</body>
+</html>
