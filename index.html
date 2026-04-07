@@ -11,6 +11,51 @@
     <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="static/css/index.css">
+    <style>
+        /* Increase global font size */
+        body {
+            font-size: 18px !important;
+        }
+        .title {
+            font-size: 1.5em !important;
+        }
+        .subtitle {
+            font-size: 1.2em !important;
+        }
+        p {
+            font-size: 1em !important;
+            line-height: 1.8 !important;
+        }
+        .is-size-6 {
+            font-size: 1.1em !important;
+        }
+        .is-size-7 {
+            font-size: 1em !important;
+        }
+        .heading {
+            font-size: 1.05em !important;
+        }
+        
+        /* Hero section larger text */
+        .hero.has-custom-bg h1.title.is-1 {
+            font-size: 2.8em !important;
+            margin-bottom: 1.5rem !important;
+        }
+        .hero.has-custom-bg .subtitle.is-4 {
+            font-size: 1.3em !important;
+            margin-bottom: 0.25rem !important;
+            font-weight: 600;
+        }
+        .hero.has-custom-bg .subtitle-secondary {
+            font-size: 1.1em !important;
+            margin-bottom: 2rem !important;
+            line-height: 1.6 !important;
+        }
+        .hero.has-custom-bg .button.is-medium {
+            font-size: 1em !important;
+            padding: 0.75rem 1.5rem !important;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -21,11 +66,18 @@
                     <img src="static/images/miccai2026-logo.png" alt="MICCAI 2026" style="height: 40px; margin-right: 10px;">
                     <strong>MultiTab 2026</strong>
                 </a>
+                <!-- Hamburger Menu for Mobile -->
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
             </div>
-            <div class="navbar-menu">
+            <div id="navbarMenu" class="navbar-menu">
                 <div class="navbar-end">
                     <a class="navbar-item" href="#about">About</a>
                     <a class="navbar-item" href="#cfp">Call for Papers</a>
+                    <a class="navbar-item" href="#important-dates">Important Dates</a>
                     <a class="navbar-item" href="#organizers">Organizers</a>
                     <a class="navbar-item" href="#keynote">Keynote</a>
                 </div>
@@ -71,23 +123,22 @@
                     </div>
                 </div>
             </div>
-            <!-- Organized By -->
-            <h4 class="title is-5 has-text-centered" style="margin-top: 1.5rem; margin-bottom: 1rem;">Organized By</h4>
-            <div class="columns is-centered is-vcentered">
-                <div class="column is-narrow">
-                    <img src="static/images/logos/helmholtz_munich.jpg" alt="Helmholtz Munich" style="height: 80px; margin: 0 20px;">
-                </div>
-                <div class="column is-narrow">
-                    <img src="static/images/logos/tum.png" alt="TUM" style="height: 80px; margin: 0 20px;">
-                </div>
-                <div class="column is-narrow">
-                    <img src="static/images/logos/imperial_college_london.png" alt="Imperial College London" style="height: 80px; margin: 0 20px;">
-                </div>
-                <div class="column is-narrow">
-                    <img src="static/images/logos/telecom_paris.jpg" alt="Télécom Paris" style="height: 80px; margin: 0 20px;">
-                </div>
-                <div class="column is-narrow">
-                    <img src="static/images/logos/IP_PARIS.png" alt="IP Paris" style="height: 80px; margin: 0 20px;">
+            <!-- Related Workshops -->
+            <div class="box" style="margin-top: 1.5rem; background-color: #f5f5f5;">
+                <p class="heading has-text-info"><i class="fas fa-info-circle"></i> Part of "Multimodal Learning" Theme</p>
+                <p class="content" style="margin-bottom: 1rem;">
+                    <strong>MultiTab 2026</strong> is part of the "Multimodal Learning" theme at MICCAI 2026.
+                </p>
+                <p class="content" style="margin-bottom: 1rem; font-weight: 600;">
+                    Related workshops:
+                </p>
+                <div class="columns is-multiline">
+                    <div class="column is-half">
+                        <p class="is-size-7"><strong>SE 1: ML-CDS</strong><br><span class="has-text-grey">Multimodal Learning for Clinical Decision Support</span></p>
+                    </div>
+                    <div class="column is-half">
+                        <p class="is-size-7"><strong>SE 2: MULTITAB (W)</strong><br><span class="has-text-grey">2-hour workshop on multimodal tabular data</span></p>
+                    </div>
                 </div>
             </div>
 
@@ -188,7 +239,7 @@
                     <div class="column is-half">
                         <p>
                             <strong><i class="fas fa-shield-alt has-text-primary"></i> Double-Blind Review</strong><br>
-                            <span class="is-size-7">All submissions undergo rigorous double-blind peer review with minimum 3 reviewers per paper, ensuring transparent and fair evaluation by experts in the field.</span>
+                            <span class="is-size-7">All submissions undergo rigorous double-blind peer review with a minimum of 3 reviewers per paper, ensuring transparent and fair evaluation by experts in the field.</span>
                         </p>
                     </div>
                     <div class="column is-half">
@@ -256,44 +307,11 @@
                 <div class="column is-half">
                     <h3 class="title is-4 mb-3">Program</h3>
                     <div class="box">
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <div class="timeline-marker is-primary"></div>
-                                <div class="timeline-content">
-                                    <p class="heading">OCTOBER 6, 2026 · 08:00 - 08:10</p>
-                                    <p><strong>Welcome and Opening Remarks</strong></p>
-                                </div>
-                            </div>
-
-                            <div class="timeline-item">
-                                <div class="timeline-marker is-info"></div>
-                                <div class="timeline-content">
-                                    <p class="heading">OCTOBER 6, 2026 · 08:10 - 08:50</p>
-                                    <p><strong>Keynote Presentation</strong></p>
-                                    <p class="is-size-7 has-text-grey">
-                                        Speakers: Marine le Morvan (Tabular Foundation Models), Mateja Jammik (Multimodal Models), Arkadiusz Sitek (Translational Healthcare)
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="timeline-item">
-                                <div class="timeline-marker is-success"></div>
-                                <div class="timeline-content">
-                                    <p class="heading">OCTOBER 6, 2026 · 08:50 - 09:30</p>
-                                    <p><strong>Scientific Talks</strong></p>
-                                    <p class="is-size-7 has-text-grey">Selected papers and research presentations</p>
-                                </div>
-                            </div>
-
-                            <div class="timeline-item">
-                                <div class="timeline-marker is-warning"></div>
-                                <div class="timeline-content">
-                                    <p class="heading">OCTOBER 6, 2026 · 09:30 - 10:00</p>
-                                    <p><strong>Poster Session & Closing Remarks</strong></p>
-                                    <p class="is-size-7 has-text-grey">Awards and networking</p>
-                                </div>
-                            </div>
-                        </div>
+                        <p class="heading has-text-warning"><i class="fas fa-calendar-alt"></i> Coming Soon</p>
+                        <p class="content">
+                            The detailed program schedule will be finalized and announced soon. The workshop will take place on <strong>October 6, 2026</strong> and will be <strong>2 hours long</strong> at MICCAI 2026.
+                        </p>
+                        <p class="is-size-7 has-text-grey">Please check back for updates on keynote speakers, scientific talks, and poster sessions.</p>
                     </div>
                 </div>
             </div>
@@ -313,6 +331,17 @@
                 <p>
                     Submissions will be managed through OpenReview. Details will be announced on this page.
                 </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keynote Speakers Section -->
+    <section class="section has-background-light" id="keynote">
+        <div class="container">
+            <h2 class="title is-3 has-text-centered">Keynote Speakers</h2>
+            <div class="box" style="text-align: center; padding: 3rem;">
+                <p class="heading has-text-info"><i class="fas fa-hourglass-half"></i> Coming Soon</p>
+                <p class="title is-5">Keynote speakers will be announced soon</p>
             </div>
         </div>
     </section>
@@ -526,61 +555,25 @@
         </div>
     </section>
 
-    <!-- Keynote Speakers Section -->
-    <section class="section has-background-light" id="keynote">
+    <!-- Organized By -->
+    <section class="section has-background-light">
         <div class="container">
-            <h2 class="title is-3 has-text-centered">Keynote Speakers</h2>
-
-            <div class="columns is-multiline">
-                <!-- Keynote Speaker 1 -->
-                <div class="column is-full-tablet is-one-third-desktop">
-                    <div class="box">
-                        <figure class="image is-128x128 mb-3">
-                            <img src="static/images/photos/Marine-le-Morvan.jpg" alt="Marine le Morvan" style="object-fit: cover; border-radius: 8px;">
-                        </figure>
-                        <h3 class="title is-5">Marine le Morvan</h3>
-                        <p class="is-size-7 has-text-grey mb-2"><strong>Research Scientist (Chargée de Recherche)</strong></p>
-                        <p class="is-size-7 has-text-grey mb-3">INRIA (SODA team, Paris-Saclay)</p>
-                        <p class="is-size-7 mt-2">
-                            <a href="https://marinelm.github.io/" target="_blank" class="has-text-primary">
-                                <i class="fas fa-globe"></i> Website
-                            </a>
-                        </p>
-                    </div>
+            <h4 class="title is-5 has-text-centered" style="margin-bottom: 2rem;">Organized By</h4>
+            <div class="columns is-centered is-vcentered">
+                <div class="column is-narrow">
+                    <img src="static/images/logos/helmholtz_munich.jpg" alt="Helmholtz Munich" style="height: 80px; margin: 0 20px;">
                 </div>
-
-                <!-- Keynote Speaker 2 -->
-                <div class="column is-full-tablet is-one-third-desktop">
-                    <div class="box">
-                        <figure class="image is-128x128 mb-3">
-                            <img src="static/images/photos/jamnik_mateja.png" alt="Mateja Jamnik" style="object-fit: cover; border-radius: 8px;">
-                        </figure>
-                        <h3 class="title is-5">Mateja Jamnik</h3>
-                        <p class="is-size-7 has-text-grey mb-2"><strong>Professor of Artificial Intelligence</strong></p>
-                        <p class="is-size-7 has-text-grey mb-3">University of Cambridge</p>
-                        <p class="is-size-7 mt-2">
-                            <a href="https://www.cl.cam.ac.uk/~mj201/" target="_blank" class="has-text-primary">
-                                <i class="fas fa-globe"></i> Website
-                            </a>
-                        </p>
-                    </div>
+                <div class="column is-narrow">
+                    <img src="static/images/logos/tum.png" alt="TUM" style="height: 80px; margin: 0 20px;">
                 </div>
-
-                <!-- Keynote Speaker 3 -->
-                <div class="column is-full-tablet is-one-third-desktop">
-                    <div class="box">
-                        <figure class="image is-128x128 mb-3">
-                            <img src="static/images/photos/Arkadiusz-Sitek.webp" alt="Arkadiusz Sitek" style="object-fit: cover; border-radius: 8px;">
-                        </figure>
-                        <h3 class="title is-5">Arkadiusz Sitek</h3>
-                        <p class="is-size-7 has-text-grey mb-2"><strong>Research Scientist and Physicist</strong></p>
-                        <p class="is-size-7 has-text-grey mb-3">Massachusetts General Hospital | Harvard Medical School</p>
-                        <p class="is-size-7 mt-2">
-                            <a href="https://www.areksitek.com/" target="_blank" class="has-text-primary">
-                                <i class="fas fa-globe"></i> Website
-                            </a>
-                        </p>
-                    </div>
+                <div class="column is-narrow">
+                    <img src="static/images/logos/imperial_college_london.png" alt="Imperial College London" style="height: 80px; margin: 0 20px;">
+                </div>
+                <div class="column is-narrow">
+                    <img src="static/images/logos/telecom_paris.jpg" alt="Télécom Paris" style="height: 80px; margin: 0 20px;">
+                </div>
+                <div class="column is-narrow">
+                    <img src="static/images/logos/IP_PARIS.png" alt="IP Paris" style="height: 80px; margin: 0 20px;">
                 </div>
             </div>
         </div>
@@ -602,8 +595,8 @@
                     <ul class="is-size-7">
                         <li><a href="#about" class="has-text-grey-light">About</a></li>
                         <li><a href="#cfp" class="has-text-grey-light">Call for Papers</a></li>
-                        <li><a href="#program" class="has-text-grey-light">Program</a></li>
-                        <li><a href="#contact" class="has-text-grey-light">Contact</a></li>
+                        <li><a href="#important-dates" class="has-text-grey-light">Program</a></li>
+                        <li><a href="#organizers" class="has-text-grey-light">Contact</a></li>
                     </ul>
                 </div>
                 <div class="column is-one-quarter">
