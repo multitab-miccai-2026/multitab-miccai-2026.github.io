@@ -6,7 +6,7 @@
 
 **Website:** https://multitab-miccai-2026.github.io/
 
-<img src="static/images/miccai2026-logo.png" alt="MultiTab 2026 logo" width="180">
+<img src="static/images/miccai2026-mobile-logo-france.png" alt="MultiTab 2026 logo" width="180">
 
 </div>
 
