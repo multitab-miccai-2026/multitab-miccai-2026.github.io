@@ -35,7 +35,7 @@ The workshop welcomes contributions on:
 | Paper submission deadline | May 15, 2026 |
 | Abstract submission deadline | May 20, 2026 |
 | Acceptance notification | June 15, 2026 |
-| Workshop date | October 6, 2026 |
+| Workshop date | September 27, 2026 |
 
 ## Organizers
 
