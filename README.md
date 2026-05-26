@@ -98,7 +98,6 @@ The workshop welcomes contributions on:
 
 ## More Information
 
-
 Please visit the workshop website for the latest updates on the call for papers, keynote speakers, program details, and submission information:
 
 **https://multitab-miccai-2026.github.io/**
