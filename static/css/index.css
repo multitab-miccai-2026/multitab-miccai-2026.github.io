@@ -292,6 +292,81 @@ body {
   transform: translateY(-8px);
 }
 
+/* Keynote speaker */
+.keynote-speaker {
+  max-width: 920px;
+  margin: 0;
+  padding: 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.keynote-header {
+  display: grid;
+  grid-template-columns: 128px 1fr;
+  gap: 1.25rem;
+  align-items: center;
+  padding: 1.5rem 1.5rem 1.25rem;
+}
+
+.keynote-photo {
+  width: 128px;
+  height: 128px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.keynote-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.keynote-meta .subtitle {
+  color: #4a4a4a;
+}
+
+.keynote-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 600;
+}
+
+.keynote-talk {
+  padding: 1.2rem 1.5rem;
+  background: linear-gradient(135deg, rgba(47, 111, 203, 0.08) 0%, rgba(90, 151, 240, 0.12) 100%);
+  border-top: 1px solid rgba(31, 95, 168, 0.08);
+  border-bottom: 1px solid rgba(31, 95, 168, 0.08);
+}
+
+.keynote-talk .heading {
+  color: var(--primary-color);
+  margin-bottom: 0.45rem;
+}
+
+.keynote-title {
+  color: var(--primary-dark);
+  line-height: 1.35 !important;
+  margin-bottom: 0 !important;
+}
+
+.keynote-bio {
+  max-height: 185px;
+  overflow-y: auto;
+  padding: 1.15rem 1.5rem;
+  background: #ffffff;
+}
+
+.keynote-bio .content {
+  margin-bottom: 0.85rem;
+}
+
+.keynote-bio .content:last-child {
+  margin-bottom: 0;
+}
+
 /* Column alignment for equal heights */
 .columns {
   display: flex;
@@ -787,7 +862,29 @@ a:not(.button):hover::after {
   h2.title {
     font-size: 2rem;
   }
+
+  .keynote-header {
+    grid-template-columns: 1fr;
+    justify-items: start;
+    text-align: left;
+    padding: 1.25rem;
+  }
+
+  .keynote-photo {
+    width: 116px;
+    height: 116px;
+  }
+
+  .keynote-talk {
+    padding: 1rem 1.25rem;
+  }
+
+  .keynote-bio {
+    max-height: 240px;
+    padding: 1rem 1.25rem;
+  }
 }
+
 
 /* CFP Section - Call for Papers */
 #cfp {
